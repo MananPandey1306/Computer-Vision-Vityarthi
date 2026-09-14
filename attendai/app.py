@@ -12,6 +12,64 @@ from modules.reports import get_report_df
 
 st.set_page_config(page_title="AttendAI", layout="wide")
 
+st.markdown("""
+<style>
+/* Base theme adjustments */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Watermark */
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7;
+    z-index: 1000;
+    font-size: 16px;
+    color: #cbd5e1;
+    text-align: right;
+    pointer-events: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Glassmorphism for inputs and forms */
+div[data-testid="stForm"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+}
+
+/* Button styling */
+button[data-testid="baseButton-secondary"], button[data-testid="baseButton-primaryFormSubmit"] {
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+button[data-testid="baseButton-secondary"]:hover, button[data-testid="baseButton-primaryFormSubmit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.5);
+    border: none;
+    color: white !important;
+}
+</style>
+
+<div class="watermark">
+    Manan Pandey<br>24BAI10033
+</div>
+""", unsafe_allow_html=True)
+
 st.title("AttendAI: Face Recognition Attendance System")
 
 # Create tabs
