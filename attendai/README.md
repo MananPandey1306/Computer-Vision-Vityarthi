@@ -51,3 +51,7 @@ pytest
 
 ## Screenshots
 *(Add screenshots of the Enroll, Live Attendance, and Reports tabs here)*
+
+## Author
+- **Name**: Manan Pandey
+- **Registration Number**: 24BAI10033
